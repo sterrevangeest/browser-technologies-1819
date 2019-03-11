@@ -12,13 +12,13 @@
 
 ##### `🌈 Kleur & kleurenblindheid`
 
-##### 1. Wat voor problemen kunnen ze veroorzaken:
+#### 1. Wat voor problemen kunnen ze veroorzaken:
 
 Voor kleurenblinde kunnen elementen op de website wegvallen waardoor zij bepaalde informatie kunnen missen.
 
 ---
 
-##### 2. Hoe kun je dit testen?
+#### 2. Hoe kun je dit testen?
 
 Developer Tools voor Chrome: [Dalton for Chrome](https://chrome.google.com/webstore/detail/dalton/imknobcnmlabealhbhfhpbfodgbbdnfa) en [Let's Get Color Blind](https://chrome.google.com/webstore/detail/lets-get-color-blind/bkdgdianpkfahpkmphgehigalpighjck/related).
 
@@ -28,7 +28,7 @@ Met deze tools/website kun je een website door de ogen van een een kleurenblinde
 
 ---
 
-##### 3. Voorbeelden uit mijn directe omgeving
+#### 3. Voorbeelden uit mijn directe omgeving
 
 https://www.idotwebengineers.nl/
 ![screen](screens2.png)
@@ -39,7 +39,7 @@ Rood op een donkere achtergrond zorgt ervoor dat op bepaalde plekken het contras
 
 ---
 
-##### 4. Beschrijf hoe je dit kan fiksen.
+#### 4. Beschrijf hoe je dit kan fiksen.
 
 **Tekst**
 
@@ -47,7 +47,7 @@ Zorg ervoor dat de kleur van de tekst en de achtergrondkleur genoeg contrast gev
 
 > “WCAG 2.0 level AA requires a contrast ratio of 4.5:1 for normal text and 3:1 for large text (14 point and bold or larger, or 18 point or larger).”
 
-###### Afbeeldingen en tekst:
+##### Afbeeldingen en tekst:
 
 Wanneer je tekst over een afbeelding plaatst, zorg dan dat je de helderheid van de afbeelding verhoogt.
 
@@ -78,14 +78,14 @@ Bron: [Smashing Magazine: Improving The Color Accessibility For Color-Blind User
 
 > "Een cookie is een klein tekstbestand met informatie erop. Die informatie gaat over het gedrag van de gebruiker op de website. Bijvoorbeeld welke pagina’s deze gebruiker heeft bekeken en welke gegevens er zijn hebt ingevuld. De website-eigenaar kan deze informatie gebruiken als de gebruiker de site opnieuw bezoekt." Bron: [Consuwijzer](https://www.consuwijzer.nl/veilig-online/cookies)
 
-##### 1. Wat voor problemen kunnen ze veroorzaken:
+#### 1. Wat voor problemen kunnen ze veroorzaken:
 
 - Bij het weigeren van cookies kan het zijn dat geen toegang krijgt tot de website.
 - Bij het weigeren van cookies kan het zijn dat niet alle alle functionaliteiten werken, bijvoorbeeld dat je een artikel niet kunt delen via social media.
 
 ---
 
-##### 2. Hoe kun je dit testen?
+#### 2. Hoe kun je dit testen?
 
 Kies voor cookies weigeren en kijk of de website nog werkt.
 
@@ -97,13 +97,13 @@ Bekijk welke cookies een website gebruikt door:
 
 ---
 
-##### 3. Voorbeelden uit mijn directe omgeving
+#### 3. Voorbeelden uit mijn directe omgeving
 
 Zie hierboven &
 
 ---
 
-##### 4. Beschrijf hoe je dit kan fiksen.
+#### 4. Beschrijf hoe je dit kan fiksen.
 
 <a name="desc"></a>
 **Tekst**
