@@ -10,7 +10,7 @@
 
 <a name="kleur"></a>
 
-##### `🌈 Kleur & kleurenblindheid`
+#### `🌈 Kleur & kleurenblindheid`
 
 #### 1. Wat voor problemen kunnen ze veroorzaken:
 
@@ -75,7 +75,8 @@ Geef niet alleen met kleur feedback (bijv. rode tekst als iets mislukt is). Maar
 Bron: [Smashing Magazine: Improving The Color Accessibility For Color-Blind Users](https://www.smashingmagazine.com/2016/06/improving-color-accessibility-for-color-blind-users/)
 
 <a name="cookies"></a>
-`🍪 Cookies`
+
+#### `🍪 Cookies`
 
 > "Een cookie is een klein tekstbestand met informatie erop. Die informatie gaat over het gedrag van de gebruiker op de website. Bijvoorbeeld welke pagina’s deze gebruiker heeft bekeken en welke gegevens er zijn hebt ingevuld. De website-eigenaar kan deze informatie gebruiken als de gebruiker de site opnieuw bezoekt." Bron: [Consuwijzer](https://www.consuwijzer.nl/veilig-online/cookies)
 
