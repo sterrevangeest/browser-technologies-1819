@@ -2,13 +2,13 @@
 
 # Table of Contents
 
-1. [ Description. ](#desc)
-
-1. [Opdracht 1.1 | Breek het web](#breek-het-web)
-1. [`🌈 Kleur & kleurenblindheid`](#my-second-title)
-1. [`🍪 Cookies`](#my-third-title)
+1. [Opdracht 1.1 | Breek het web](#kleur)
+   - [`🌈 Kleur & kleurenblindheid`](#kleur)
+   - [`🍪 Cookies`](#cookies)
 
 ## Opdracht 1.1 | Breek het web
+
+<a name="kleur"></a>
 
 ##### `🌈 Kleur & kleurenblindheid`
 
@@ -74,6 +74,7 @@ Geef niet alleen met kleur feedback (bijv. rode tekst als iets mislukt is). Maar
 
 Bron: [Smashing Magazine: Improving The Color Accessibility For Color-Blind Users](https://www.smashingmagazine.com/2016/06/improving-color-accessibility-for-color-blind-users/)
 
+<a name="cookies"></a>
 `🍪 Cookies`
 
 > "Een cookie is een klein tekstbestand met informatie erop. Die informatie gaat over het gedrag van de gebruiker op de website. Bijvoorbeeld welke pagina’s deze gebruiker heeft bekeken en welke gegevens er zijn hebt ingevuld. De website-eigenaar kan deze informatie gebruiken als de gebruiker de site opnieuw bezoekt." Bron: [Consuwijzer](https://www.consuwijzer.nl/veilig-online/cookies)
@@ -105,5 +106,4 @@ Zie hierboven &
 
 #### 4. Beschrijf hoe je dit kan fiksen.
 
-<a name="desc"></a>
 **Tekst**
