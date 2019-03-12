@@ -1,22 +1,21 @@
 🎓 **Browser Technologies @cmda-minor-web-18-19**
 
-# Table of Contents
+**Table of Contents**
 
-1. [Opdracht 1.1 | Breek het web](#kleur)
-   - [`🌈 Kleur & kleurenblindheid`](#kleur)
-   - [`🍪 Cookies`](#cookies)
+1. **[Opdracht 1.1 Breek het web](#kleur)**
+
+- [Kleur & kleurenblindheid 🌈](#kleur)
+- [Cookies 🍪](#cookies)
 
 ## Opdracht 1.1 | Breek het web
 
 <a name="kleur"></a>
 
-#### `🌈 Kleur & kleurenblindheid`
+#### Kleur & kleurenblindheid 🌈
 
 #### 1. Wat voor problemen kunnen ze veroorzaken:
 
 Voor kleurenblinde kunnen elementen op de website wegvallen waardoor zij bepaalde informatie kunnen missen.
-
----
 
 #### 2. Hoe kun je dit testen?
 
@@ -26,8 +25,6 @@ Website: [Topal Colorblind Web Page Filter](https://www.toptal.com/designers/col
 
 Met deze tools/website kun je een website door de ogen van een een kleurenblinde.
 
----
-
 #### 3. Voorbeelden uit mijn directe omgeving
 
 https://www.idotwebengineers.nl/
@@ -36,8 +33,6 @@ http://www.king-wah.nl/
 ![scree](screens32.png)
 
 Rood op een donkere achtergrond zorgt ervoor dat op bepaalde plekken het contrast te laag is voor kleurenblinde (zie rechter afbeelding).
-
----
 
 #### 4. Beschrijf hoe je dit kan fiksen.
 
@@ -72,11 +67,11 @@ Voorkom deze kleurcombinaties:
 
 Geef niet alleen met kleur feedback (bijv. rode tekst als iets mislukt is). Maar geef ook met iconen en/of tekst aan wat er aan de hand is.
 
-Bron: [Smashing Magazine: Improving The Color Accessibility For Color-Blind Users](https://www.smashingmagazine.com/2016/06/improving-color-accessibility-for-color-blind-users/)
+## Bron: [Smashing Magazine: Improving The Color Accessibility For Color-Blind Users](https://www.smashingmagazine.com/2016/06/improving-color-accessibility-for-color-blind-users/)
 
 <a name="cookies"></a>
 
-#### `🍪 Cookies`
+#### Cookies 🍪
 
 > "Een cookie is een klein tekstbestand met informatie erop. Die informatie gaat over het gedrag van de gebruiker op de website. Bijvoorbeeld welke pagina’s deze gebruiker heeft bekeken en welke gegevens er zijn hebt ingevuld. De website-eigenaar kan deze informatie gebruiken als de gebruiker de site opnieuw bezoekt." Bron: [Consuwijzer](https://www.consuwijzer.nl/veilig-online/cookies)
 
@@ -84,8 +79,6 @@ Bron: [Smashing Magazine: Improving The Color Accessibility For Color-Blind User
 
 - Bij het weigeren van cookies kan het zijn dat geen toegang krijgt tot de website.
 - Bij het weigeren van cookies kan het zijn dat niet alle alle functionaliteiten werken, bijvoorbeeld dat je een artikel niet kunt delen via social media.
-
----
 
 #### 2. Hoe kun je dit testen?
 
@@ -97,14 +90,17 @@ Bekijk welke cookies een website gebruikt door:
 
 2. Bekijk cookies via het icoontje naast de URL, klik op cookies en bekijk welke cookies de website gebruikt. ![stg](stg2.png)
 
----
-
 #### 3. Voorbeelden uit mijn directe omgeving
 
-Zie hierboven &
-
----
+- [dumpert.nl](https://kudtkoekiewet.nl/?t=https://www.dumpert.nl/) kun je niet bezoeken zonder alle cookies te accepteren.
+  ![dumpert](dumpert.png)
+- Op [Moodle](https://moodle.cmd.hva.nl/login/index.php?testsession=2960) kun je niet inloggen als je cookies niet accepteert.
+  ![moodle](moodle.png)
+- Op Facebook kun je niet inloggen zonder cookies te accepteren.
+  ![facebook](facebook.png)
+- H&M laat geen afbeeldingen zien wanneer je cookies niet accepteert.
+  ![hm](hm.png)
 
 #### 4. Beschrijf hoe je dit kan fiksen.
 
-**Tekst**
+Bij het ontwikkelen van een website is het wel zo netjes/handig om je website ook toegankelijk te maken voor mensen die je cookies niet willen accepteren. Ookal werkt de website dan minder soepel.
