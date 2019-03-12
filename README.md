@@ -1,13 +1,17 @@
 🎓 **Browser Technologies @cmda-minor-web-18-19**
 
-**Table of Contents**
+### **Table of Contents**
 
-1. **[Opdracht 1.1 Breek het web](#kleur)**
+<!-- 1. **[Opdracht 1.1 Breek het web](#kleur)** -->
+
+**[Opdracht 1.1 | Breek het web](#kleur)**
 
 - [Kleur & kleurenblindheid 🌈](#kleur)
-- [Cookies 🍪](#cookies)
+- [ Cookies 🍪](#cookies)
 
-## Opdracht 1.1 | Breek het web
+---
+
+### Opdracht 1.1 | Breek het web
 
 <a name="kleur"></a>
 
@@ -67,7 +71,9 @@ Voorkom deze kleurcombinaties:
 
 Geef niet alleen met kleur feedback (bijv. rode tekst als iets mislukt is). Maar geef ook met iconen en/of tekst aan wat er aan de hand is.
 
-## Bron: [Smashing Magazine: Improving The Color Accessibility For Color-Blind Users](https://www.smashingmagazine.com/2016/06/improving-color-accessibility-for-color-blind-users/)
+Bron: [Smashing Magazine: Improving The Color Accessibility For Color-Blind Users](https://www.smashingmagazine.com/2016/06/improving-color-accessibility-for-color-blind-users/)
+
+---
 
 <a name="cookies"></a>
 
