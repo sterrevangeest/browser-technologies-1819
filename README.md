@@ -9,6 +9,8 @@
 - [Kleur & kleurenblindheid 🌈](#kleur)
 - [ Cookies 🍪](#cookies)
 
+**[Opdracht 1.2 | Fork je OBA](#opdracht2)**
+
 ---
 
 ### Opdracht 1.1 | Breek het web
@@ -110,3 +112,59 @@ Bekijk welke cookies een website gebruikt door:
 #### 4. Beschrijf hoe je dit kan fiksen.
 
 Bij het ontwikkelen van een website is het wel zo netjes/handig om je website ook toegankelijk te maken voor mensen die je cookies niet willen accepteren. Ookal werkt de website dan minder soepel.
+
+<a name="opdracht2"></a>
+
+---
+
+### Opdracht 2
+
+Analyse van [Oba Muziek op Maat](https://github.com/sterrevangeest/project-1-1819).
+
+#### Images
+
+De afbeeldingen bovenaan de pagina zijn sfeerbeelden en worden dus niet heel erg gemist als deze uitgeschakeld worden. Maar de covers onderaan de pagina verdwijnen ook als de afbeeldingen worden geblokkeerd. Het is niet heel ernstig, de titel en het type van het item worden namelijk wel nog weergegeven. Toch kan de cover van een boek/cd/etc... wel aanvullende informatie geven over het item.
+
+Oplossing: geef een `alt-text` mee aan het `img` element die de omslag van het boek beschrijft.
+![images.png](images.png)
+
+> Links: normaal , rechts afbeeldingen uit.
+
+#### Custom Fonts
+
+Het font Montserrat wordt ingeladen via Google Fonts.
+
+> (Perhaps the most important factor here) Google fonts are cached. This means that there is a relatively high chance that it has already been cached on your visitors computer, as there is a high chance that that same font has been used on another website, therefore it reduces page load time.
+
+![images.png](font.png)
+
+> Links: normaal , rechts font uit.
+
+Ik gebruikte niet echt een fallback font. Behalve:
+
+`font-family: "Montserrat", sans-serif;`
+
+Beter is om meer fallback fonts toe te voegen:
+
+`font-family: "Montserrat", "DejaVu Sans", Verdana, sans-serif;`
+
+#### Kleur
+
+Via [Color Contrast Checker](https://webaim.org/resources/contrastchecker/) heb ik mijn website getest.
+Resultaat: bijna alles heeft een te laag contrast. Behalve de zwarte tekst op de lichtrode achtergrond is hoog genoeg.
+
+Ik kan dit oplossen door rood: `#FF3B30` donker rood te maken, moet minimaal dit worden: `#A30800` voor genoeg contrast op `#F7EEE7`.
+
+#### Muis
+
+Op de beginpagina is goed te navigeren zonder muis. Op de pagina waar de gebruiker nummers kan kiezen, kan de gebruiker niet over de nummers heen met een tab. Omdat het geen linkjes/buttons zijn 😳.
+
+#### Breedband
+
+Bij het laden met slow 3G, duurt het even voordat de items geladen worden.
+
+#### JavaScript uit
+
+#### Cookies
+
+#### localStorage
