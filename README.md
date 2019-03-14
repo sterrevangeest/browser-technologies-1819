@@ -13,7 +13,7 @@
 
 ---
 
-### Opdracht 1.1 | Breek het web
+## Opdracht 1.1 | Breek het web
 
 <a name="kleur"></a>
 
@@ -117,11 +117,11 @@ Bij het ontwikkelen van een website is het wel zo netjes/handig om je website oo
 
 ---
 
-### Opdracht 2
+## Opdracht 2
 
 Analyse van [Oba Muziek op Maat](https://github.com/sterrevangeest/project-1-1819).
 
-#### Images
+### Images
 
 De afbeeldingen bovenaan de pagina zijn sfeerbeelden en worden dus niet heel erg gemist als deze uitgeschakeld worden. Maar de covers onderaan de pagina verdwijnen ook als de afbeeldingen worden geblokkeerd. Het is niet heel ernstig, de titel en het type van het item worden namelijk wel nog weergegeven. Toch kan de cover van een boek/cd/etc... wel aanvullende informatie geven over het item.
 
@@ -130,7 +130,7 @@ Oplossing: geef een `alt-text` mee aan het `img` element die de omslag van het b
 
 > Links: normaal , rechts afbeeldingen uit.
 
-#### Custom Fonts
+### Custom Fonts
 
 Het font Montserrat wordt ingeladen via Google Fonts.
 
@@ -148,23 +148,23 @@ Beter is om meer fallback fonts toe te voegen:
 
 `font-family: "Montserrat", "DejaVu Sans", Verdana, sans-serif;`
 
-#### Kleur
+### Kleur
 
 Via [Color Contrast Checker](https://webaim.org/resources/contrastchecker/) heb ik mijn website getest.
 Resultaat: bijna alles heeft een te laag contrast. Behalve de zwarte tekst op de lichtrode achtergrond is hoog genoeg.
 
 Ik kan dit oplossen door rood: `#FF3B30` donker rood te maken, moet minimaal dit worden: `#A30800` voor genoeg contrast op `#F7EEE7`.
 
-#### Muis
+### Muis
 
 Op de beginpagina is goed te navigeren zonder muis. Op de pagina waar de gebruiker nummers kan kiezen, kan de gebruiker niet over de nummers heen met een tab. Omdat het geen linkjes/buttons zijn 😳.
 
-#### Breedband
+### Breedband
 
 Bij het laden met slow 3G, duurt het even voordat de items geladen worden.
 
-#### JavaScript uit
+### JavaScript uit
 
-#### Cookies
+### Cookies
 
-#### localStorage
+### localStorage
