@@ -161,10 +161,40 @@ Op de beginpagina is goed te navigeren zonder muis. Op de pagina waar de gebruik
 
 ### Breedband
 
-Bij het laden met slow 3G, duurt het even voordat de items geladen worden.
+Bij het laden met slow 3G, duurt het even voordat de pagina geladen wordt. Echter het ophalen van de data uit de OBA api duurt ontzettend lang op een langzame verbinding. Als de data al in de localStorage staat is de website een stuk sneller.
+
+Na ongeveer 964ms worden de eerste 4 afbeeldingen geladen.
 
 ### JavaScript uit
 
+Als JavaScript uit staat werkt het data ophalen niet, wat vrij essentieel is voor de website. Dit kun je oplossen door een server-side app te maken.
+
 ### Cookies
 
+De website gebruikt geen Cookies.
+
 ### localStorage
+
+De data die opgehaald moet worden uit de API wordt na de eerste keer ophalen meteen in de localStorage opgeslagen. Dit scheelt heel veel laadtijd als de gebruiker opnieuw laad. Maar de gebruiker kan nog steeds de pagina bezoeken wanneer localStorage uit staat.
+
+### Verschillende browsers
+
+Chrome vs. Safari vs. FireFox vs. Opera Mini
+
+- Verschil in fontdikte per browser.
+- Verschil in inputvelden/select
+- In FireFox deed de API het niet...
+- FireFox werkt minder zonder muis (skipt linkjes). Safari werkt helemaal niet met tabs
+
+### Verschillende apparaten
+
+De website is niet echt responsive. Dit merk je zodra je de website op andere apparaten opent. Je moet inzoomen om text etc. te kunnen lezen & bekijken.
+
+## To Do's
+
+- [x] Fallback font
+- [ ] Responsive maken.
+- [ ] Alt-text voor boeken etc.
+- [ ] Zorgen voor een hoger contrast wat betreft kleuren.
+- [ ] Elementen die moeten functioneren als linkjes of buttons ook daadwerkelijk `<a>` of `<button>` elementen maken.
+- [ ] Voor JS uit: server side app maken
