@@ -1,0 +1,121 @@
+::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  overflow-y: hidden;
+  background-color: purple;
+  background: linear-gradient(#e66465, #9198e5);
+  padding: 1em;
+  height: 100vh;
+}
+body {
+  font-family: "HelveticaTextbook LT Roman", "Helvetica Neue", Helvetica, Arial,
+    "Lucida Grande", sans-serif;
+  max-width: 50em;
+  margin: 1em auto;
+}
+
+a,
+button {
+  color: black;
+  display: inline-block;
+  padding: 0.5em 1em;
+  border: 3px solid black;
+  font-size: 1rem;
+}
+
+a:hover,
+button:hover {
+  background-color: black;
+  color: white;
+}
+
+h1 {
+  text-transform: uppercase;
+  text-align: center;
+  background-color: white;
+  padding: 0.5em;
+  border: 3px solid black;
+  border-left: none;
+  border-right: none;
+  font-weight: 500;
+  font-size: calc(1em + 1vw);
+  margin-top: 2em;
+  position: sticky;
+}
+
+nav {
+  /* background-color: white; */
+  /* border: 3px solid black; */
+  border-left: none;
+  border-right: none;
+  margin-bottom: 1em;
+}
+
+nav ul li {
+  background-color: white;
+  list-style-type: none;
+  display: inline;
+  margin: 0;
+}
+
+nav ul li a {
+  background-color: white;
+}
+
+nav ul {
+  display: inline;
+  margin: 0 auto;
+  padding: 0;
+}
+
+fieldset {
+  border: none;
+  border-top: 3px solid black;
+  background-color: white;
+  padding: 2em;
+  margin-bottom: 70vh;
+  scroll-snap-align: start;
+}
+
+legend {
+  /* border: 3px solid black; */
+  border-bottom: none;
+  background-color: white;
+  padding: 0.5em 2em;
+  font-size: 1.1em;
+  font-weight: 800;
+}
+
+main {
+  scroll-snap-type: mandatory;
+  scroll-snap-points-y: repeat(3rem);
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+
+  height: 70vh;
+  overflow-y: scroll;
+}
+
+label {
+  display: block;
+  padding: 0.2em;
+}
+
+input {
+  margin-right: 2em;
+  /* height: 2em; */
+  border: 1px solid black;
+  /* font-size: 1.1em; */
+}
+
+form a {
+  margin-top: 1em;
+}
+
+form nav ul {
+  /* display: flex; */
+  /* justify-content: space-between; */
+}

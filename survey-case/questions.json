@@ -1,0 +1,34 @@
+[
+  {
+    "question-id": 1,
+    "legend": "Wat is je leeftijd?",
+    "type": "radio",
+    "values": [
+      { "value-id": 1, "answer": "Jonger dan 18 jaar", "checked": "checked" },
+      { "value-id": 2, "answer": "18 tot 26 jaar", "checked": "" },
+      { "value-id": 3, "answer": "26 tot 40 jaar", "checked": "" },
+      { "value-id": 4, "answer": "40 tot 45 jaar", "checked": "" },
+      { "value-id": 5, "answer": "56 tot 65 jaar", "checked": "" },
+      { "value-id": 5, "answer": "Ouder dan 65 jaar", "checked": "" }
+    ]
+  },
+  {
+    "question-id": 2,
+    "legend": "Wat is je hoogst genoten opleiding?",
+    "type": "radio",
+    "values": [
+      "Basisonderwijs",
+      "Middelbare school",
+      "Middelbaar beroepsonderwijs",
+      "Hoger beroepsonderwijs",
+      "Universitair onderwijs (bachelor)",
+      "Universitair onderwijs (master)",
+      "Universitair onderwijs (doctoraat)"
+    ]
+  },
+  {
+    "question-id": 3,
+    "legend": "Wat is je postcode",
+    "type": "text"
+  }
+]

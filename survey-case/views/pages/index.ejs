@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Enquete</title>
+    <link rel="stylesheet" href="/stylesheets/stylesheet.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <h1>Enquete & publieksprijs 2018-2019</h1>
+
+    <!-- <nav>
+      <ul>
+        <li><a href="#page-1">1</a></li>
+        <li><a href="#page-2">2</a></li>
+        <li><a href="#page-3">3</a></li>
+      </ul>
+    </nav> -->
+
+    <main>
+
+      <!-- <h2>Enquete</h2> -->
+
+      <form class="" action="<%= data["question-id"] %>" method="post">
+      <fieldset>
+      <legend for="" ><%= data.legend %>  <%= data["question-id"] %>/10 </legend>
+
+      <% if (data.values) { %>
+        <% data.values.forEach(function(item) { %>
+          <label for="<%= item.answer %>">
+            <input type="<%= data.type %>" name="<%=data["question-id"] %>" value="<%= item.answer %>" id="<%= item.answer %>" <%= item.checked %>  >
+            <%= item.answer %>
+          </label>
+        <% }); %>
+
+      <% } %>
+
+      <% if (!data.values) { %>
+          <label for="<%= data.label %>">
+        <input type="text" name="" value="">
+
+      <% } %>
+      <a href="<%= data["question-id"] -1 %>"> Vorige</a>
+      <button type="submit" name="button">Volgende</button>
+      </fieldset>
+      </form>
+
+
+    </main>
+  </body>
+</html>
