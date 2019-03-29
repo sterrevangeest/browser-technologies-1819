@@ -5,6 +5,7 @@ const app = express();
 var bodyParser = require("body-parser");
 const port = 4000;
 
+var answerIds = [1, 2, 3];
 var answers = [];
 var questions = [
   {
@@ -17,7 +18,7 @@ var questions = [
       { "value-id": 3, answer: "26 tot 40 jaar" },
       { "value-id": 4, answer: "40 tot 45 jaar" },
       { "value-id": 5, answer: "56 tot 65 jaar" },
-      { "value-id": 5, answer: "Ouder dan 65 jaar" }
+      { "value-id": 6, answer: "Ouder dan 65 jaar" }
     ]
   },
   {
@@ -25,19 +26,20 @@ var questions = [
     legend: "Wat is je hoogst genoten opleiding?",
     type: "radio",
     values: [
-      "Basisonderwijs",
-      "Middelbare school",
-      "Middelbaar beroepsonderwijs",
-      "Hoger beroepsonderwijs",
-      "Universitair onderwijs (bachelor)",
-      "Universitair onderwijs (master)",
-      "Universitair onderwijs (doctoraat)"
+      { "value-id": 1, answer: "Basisonderwijs" },
+      { "value-id": 2, answer: "Middelbare school" },
+      { "value-id": 3, answer: "Middelbaar beroepsonderwijs" },
+      { "value-id": 4, answer: "Hoger beroepsonderwijs" },
+      { "value-id": 5, answer: "Universitair onderwijs (bachelor)" },
+      { "value-id": 6, answer: "Universitair onderwijs (master)" },
+      { "value-id": 6, answer: "Universitair onderwijs (doctoraat)" }
     ]
   },
   {
     "question-id": 3,
     legend: "Wat is je postcode",
-    type: "text"
+    type: "zip",
+    pattern: "[1-9][0-9]{3}s?[a-zA-Z]{2}"
   }
 ];
 
@@ -46,8 +48,28 @@ app.use(express.static("static"));
 app.use(bodyParser());
 app.set("view engine", "ejs");
 
+app.get("/verzenden", function(req, res) {
+  console.log(answers);
+  var nognietbeantwoord = answers.map(function(item) {
+    var questionId = item.questionId;
+    return answerIds.find(function(item) {
+      if (questionId !== item) {
+        console.log("ITEM", item);
+        return item;
+      }
+    });
+  });
+
+  console.log(nognietbeantwoord);
+
+  res.render("pages/verzenden", {
+    antwoorden: nognietbeantwoord
+  });
+});
+
 app.get("/index/:id", function(req, res) {
   var id = Number(req.params.id);
+  console.log("ID= ", id);
 
   var findQuestion = questions.find(function(item) {
     // find matching question
@@ -57,19 +79,16 @@ app.get("/index/:id", function(req, res) {
   });
 
   var findAnswer = answers.find(function(item) {
-    console.log("item", item);
-    console.log("1", item["questionId"]); ///UNDEFINED
-    console.log("2", id); ///UNDEFINED
+    console.log("Answer ID", item["questionId"]);
     if (item["questionId"] === id) {
       console.log(item);
       return item;
     }
   });
-  console.log("findAnswer", findAnswer);
 
   var specificQuestion = findQuestion.values;
-  /// HIER GEBLEVEN
   var matchQuestionWithAnswer = specificQuestion.find(function(value) {
+    console.log(findAnswer);
     if (findAnswer === undefined) {
       console.log("geen antwoord nog");
     } else if (findAnswer != undefined) {
@@ -78,7 +97,6 @@ app.get("/index/:id", function(req, res) {
           if (test["checked"]) {
             return test;
           }
-          // return test["checked"];
         });
 
         if (!checkchecker) {
@@ -96,25 +114,19 @@ app.get("/index/:id", function(req, res) {
     }
   });
 
-  // console.log("answers", answers);
-
   res.render("pages/index", {
     data: findQuestion
-    // answer: findValue
   });
 });
 
 app.post("/index/:id", function(req, res) {
   var id = Number(req.params.id) + 1;
-
   var question = questions.find(function(item) {
     return item["question-id"] === id;
   });
 
   var postId = Number(req.params.id);
   var value = req.body[postId];
-
-  // console.log("answers", answers);
 
   console.log(answers.length);
   if (answers.length == 0) {
@@ -131,10 +143,8 @@ app.post("/index/:id", function(req, res) {
       if (ids.questionId !== postId) {
         console.log("doe niks");
       } else {
-        // console.log(answers);
         delete ids.value;
         delete ids.questionId;
-        // console.log("net verwijderd", answers);
         answers.push({
           questionId: postId,
           value: value

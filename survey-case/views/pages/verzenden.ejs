@@ -1,0 +1,37 @@
+<!-- views/pages/about.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <% include ../partials/head %>
+</head>
+<body class="container">
+
+<header>
+    <% include ../partials/header %>
+</header>
+
+<section class="detail">
+
+<p>Vraag
+
+
+  <% antwoorden.forEach(function(item) { %>
+
+  <a href="index/<%= item%>"> <%= item%>  </a>
+        <% }); %>
+
+  zijn nog niet ingevuld, misschien wilt u dit alsnog doen?</p>
+
+
+
+</section>
+
+
+<footer>
+    <% include ../partials/footer %>
+</footer>
+
+</body>
+
+</html>

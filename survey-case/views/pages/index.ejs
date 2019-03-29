@@ -28,22 +28,23 @@
       <% if (data.values) { %>
         <% data.values.forEach(function(item) { %>
           <label for="<%= item.answer %>">
-            <input type="<%= data.type %>" name="<%=data["question-id"] %>" value="<%= item.answer %>" id="<%= item.answer %>" <%= item.checked %>  >
+            <input type="<%= data.type %>" name="<%=data["question-id"] %>" value="<%= item.answer %>" id="<%= item.answer %>" <%= item.checked %>   >
             <%= item.answer %>
           </label>
         <% }); %>
-
       <% } %>
 
       <% if (!data.values) { %>
           <label for="<%= data.label %>">
-        <input type="text" name="" value="">
-
+          <input type="text" pattern="<%= data.pattern %>" placeholder="123AB">
       <% } %>
       <a href="<%= data["question-id"] -1 %>"> Vorige</a>
       <button type="submit" name="button">Volgende</button>
       </fieldset>
+        <a href="/verzenden">Verzend</a>
       </form>
+
+
 
 
     </main>
